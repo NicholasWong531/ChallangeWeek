@@ -1,0 +1,59 @@
+//Specific input code for microcontroller
+
+
+void Delay(void)
+{
+    int dot;
+    int dash;
+    for(i=0;i<100;i++)
+    {
+        for(j=0;j<300;j++)
+        {
+        }
+    }
+    }
+    
+    void letterrs(void){
+    P3 = 0x00;            // LED ON
+        Delay();              // DOT
+        P3 = 0xff;            // LED OFF
+        Delay();     
+        P3 = 0x00;            // LED ON
+        Delay();              // DOT
+        P3 = 0xff;            // LED OFF
+        Delay();
+        P3 = 0x00;            // LED ON
+        Delay();              // DOT
+        P3 = 0xff;            // LED OFF
+        Delay();
+        }
+        
+      void letterro {
+       P3 = 0x00;            // LED ON
+        Delay();              // DASH
+        Delay();              // 
+        Delay();              // 
+        P3 = 0xff;            // LED OFF
+        Delay(); 
+        P3 = 0x00;            // LED ON
+        Delay();              // DASH
+        Delay();              // 
+        Delay();              // 
+        P3 = 0xff;            // LED OFF
+        Delay(); 
+        P3 = 0x00;            // LED ON
+        Delay();              // DASH
+        Delay();              // 
+        Delay();              // 
+        P3 = 0xff;            // LED OFF
+        Delay();
+      }
+      
+void main(void){
+
+while(1)                // infinite loop
+    {
+       letterrs;   
+       letterro;
+       letterrs;
+}
