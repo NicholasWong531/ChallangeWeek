@@ -47,7 +47,43 @@ void loop() {
 void pin_ISR(){
 if (buttonState == HIGH) {
       digitalWrite(LED_BUILTIN, HIGH);
-      delay(1000);                       
+      delay(100);                       
       digitalWrite(LED_BUILTIN, LOW);    
-      delay(1000);
+      delay(100);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(100);                       
+      digitalWrite(LED_BUILTIN, LOW);    
+      delay(100);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(100);                       
+      digitalWrite(LED_BUILTIN, LOW);    
+      delay(100);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(100);                       
+      digitalWrite(LED_BUILTIN, LOW);    
+      delay(100);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(100);                       
+      digitalWrite(LED_BUILTIN, LOW);    
+      delay(100);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(100);                       
+      digitalWrite(LED_BUILTIN, LOW);    
+      delay(100);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(100);                       
+      digitalWrite(LED_BUILTIN, LOW);    
+      delay(100);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(100);                       
+      digitalWrite(LED_BUILTIN, LOW);    
+      delay(100);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(100);                       
+      digitalWrite(LED_BUILTIN, LOW);    
+      delay(100);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(100);                       
+      digitalWrite(LED_BUILTIN, LOW);    
+      delay(100);
     }}
