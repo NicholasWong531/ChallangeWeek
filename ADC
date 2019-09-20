@@ -1,0 +1,16 @@
+#include <Arduino.h>
+
+void setup() {
+  pinMode(A1, INPUT);
+  Serial.begin(9600);
+  Serial.println("Begin");
+  
+}
+
+void loop() {
+  analogReadResolution(12);
+  int x = analogRead(A1);
+  //double reading = (1023/3.3)* x;
+  Serial.println(x+1);
+  delay(1000);
+}
