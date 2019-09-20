@@ -2,7 +2,7 @@ int buttonPin = PC_13;
 int ledPin = LED_BUILTIN;
 volatile int buttonState = 0;
 
-void SLetter(){
+void sLetter(){
        for(int i = 0; i < 3; i++){
               digitalWrite(LED_BUILTIN, HIGH);   
               delay(250);                       // wait for a second
