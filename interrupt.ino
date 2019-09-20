@@ -34,13 +34,12 @@ void loop() {
        delay(3000);
 }
 void pin_ISR(){
-       
        if (buttonState == HIGH) {
-              for (x=0, x<10, x++)
+              for (int i = 0, i < 10, i++)
                      digitalWrite(LED_BUILTIN, HIGH);
                      delay(100);                       
                      digitalWrite(LED_BUILTIN, LOW);    
                      delay(100);
-                                }
-     
-    }}
+              }
+    }
+}
