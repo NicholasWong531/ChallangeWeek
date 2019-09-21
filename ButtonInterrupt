@@ -1,0 +1,25 @@
+ #include <Arduino.h>
+  volatile int highNum = 0;
+  int ledPin = LED_BUILTIN; 
+  int buttonPin = USER_BTN;
+  volatile int buttonState = 0;
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(USER_BTN, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(buttonPin), pin_ISR, RISING);
+}
+
+void pin_ISR() {
+  highNum += 2000;
+}
+
+void loop() {
+  if(highNum > 0){
+    digitalWrite(ledPin, HIGH);
+    delay(1000);
+    highNum -= 1000;
+  }
+  else{
+    digitalWrite(ledPin,LOW);
+  }
+}
