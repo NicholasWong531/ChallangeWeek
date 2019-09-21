@@ -1,5 +1,6 @@
 int buttonPin = PC_13;
 int ledPin = LED_BUILTIN;
+int delayNum = 2000\
 volatile int buttonState = 0;
 
 void sLetter(){
@@ -34,12 +35,17 @@ void loop() {
        delay(3000);
 }
 void pin_ISR(){
-       if (buttonState == HIGH) {
+  int counter = 1;
+  if (buttonState == HIGH) {
+              
               for (int i = 0; i < 10; i++){
                      digitalWrite(LED_BUILTIN, HIGH);
-                     delay(100);                       
+                     delay(1000);                       
                      digitalWrite(LED_BUILTIN, LOW);    
-                     delay(100);
+                     delay(1000);
               }
     }
+}
+void blinking(int ledpin){
+  
 }
